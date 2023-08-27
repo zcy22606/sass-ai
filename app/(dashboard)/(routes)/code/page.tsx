@@ -1,7 +1,7 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 interface CodePageProps {
-  children: ReactNode;
+  // children: ReactNode;
 }
 
 const CodePage: FC<CodePageProps> = (props) => {

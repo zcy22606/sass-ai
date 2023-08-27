@@ -1,8 +1,6 @@
 'use client';
-import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { UserButton } from '@clerk/nextjs';
 import {
   ArrowRight,
   Code,
@@ -12,10 +10,10 @@ import {
   Video
 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 interface DashboardPageProps {
-  children: ReactNode;
+  // children: ReactNode;
 }
 
 const tools = [

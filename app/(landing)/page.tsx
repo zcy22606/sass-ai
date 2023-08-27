@@ -1,7 +1,7 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 interface LandingProps {
-  children: ReactNode;
+  // children: ReactNode;
 }
 
 const Landing: FC<LandingProps> = (props) => {

@@ -11,7 +11,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useChat } from 'ai/react';
 import { MessageSquare } from 'lucide-react';
 import OpenAI from 'openai';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -19,7 +19,7 @@ import { oneDark as dark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import * as z from 'zod';
 import { formSchema } from './constants';
 interface ConversationPageProps {
-  children: ReactNode;
+  // children: ReactNode;
 }
 
 type RequestMessage =

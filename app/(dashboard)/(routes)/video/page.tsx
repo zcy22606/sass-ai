@@ -1,7 +1,7 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 interface VideoPageProps {
-  children: ReactNode;
+  // children: ReactNode;
 }
 
 const VideoPage: FC<VideoPageProps> = (props) => {

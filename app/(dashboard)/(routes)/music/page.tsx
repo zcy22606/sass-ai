@@ -1,9 +1,7 @@
-import { Button } from '@/components/ui/button';
-import { UserButton } from '@clerk/nextjs';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 interface MusicPageProps {
-  children: ReactNode;
+  // children: ReactNode;
 }
 
 const MusicPage: FC<MusicPageProps> = (props) => {

@@ -1,7 +1,7 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
 interface ImagePageProps {
-  children: ReactNode;
+  // children: ReactNode;
 }
 
 const ImagePage: FC<ImagePageProps> = (props) => {
