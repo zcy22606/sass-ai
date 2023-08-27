@@ -7,5 +7,7 @@
     "next/core-web-vitals"
   ],
   "plugins": ["prettier"],
-  "rules": {}
+  "rules": {
+    "react/no-children-prop": "warn"
+  }
 }

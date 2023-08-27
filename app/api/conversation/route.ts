@@ -9,6 +9,12 @@ const openai = new OpenAI({
   // httpAgent: new HttpsProxyAgent('http://127.0.0.1:7890')
 });
 
+const instructionMessage: OpenAI.Chat.Completions.CreateChatCompletionRequestMessage =
+  {
+    role: 'system',
+    content: '你必须回答我能够在react-markdown中正常渲染的格式化数据'
+  };
+
 export async function POST(req: Request, res: Response) {
   try {
     const { userId } = auth();
@@ -31,8 +37,8 @@ export async function POST(req: Request, res: Response) {
     // console.log(res., '----------');
 
     const response = await openai.chat.completions.create({
-      model: 'gpt-3.5-turbo',
-      messages,
+      model: 'gpt-4',
+      messages: [instructionMessage, ...messages],
       stream: true,
       max_tokens: 500,
       temperature: 0.7,
