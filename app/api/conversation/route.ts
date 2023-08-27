@@ -40,7 +40,7 @@ export async function POST(req: Request, res: Response) {
       model: 'gpt-4',
       messages: [instructionMessage, ...messages],
       stream: true,
-      max_tokens: 500,
+      // max_tokens: 500,
       temperature: 0.7,
       top_p: 1,
       frequency_penalty: 1,
