@@ -1,11 +1,11 @@
-import { FC, ReactNode } from 'react'
+import { FC, ReactNode } from 'react';
 
 interface SettingPageProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const SettingPage: FC<SettingPageProps> = props => {
-  return <div>SettingPage</div>
-}
+const SettingPage: FC<SettingPageProps> = (props) => {
+  return <div>SettingPage</div>;
+};
 
-export default SettingPage
+export default SettingPage;

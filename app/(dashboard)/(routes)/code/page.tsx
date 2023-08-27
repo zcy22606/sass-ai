@@ -1,11 +1,11 @@
-import { FC, ReactNode } from 'react'
+import { FC, ReactNode } from 'react';
 
 interface CodePageProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const CodePage: FC<CodePageProps> = props => {
-  return <div>CodePage</div>
-}
+const CodePage: FC<CodePageProps> = (props) => {
+  return <div>CodePage</div>;
+};
 
-export default CodePage
+export default CodePage;

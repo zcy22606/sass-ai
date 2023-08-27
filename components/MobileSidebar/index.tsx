@@ -1,22 +1,22 @@
-'use client'
-import { FC, ReactNode, useEffect, useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Menu } from 'lucide-react'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import Sidebar from '@/components/Sidebar'
+'use client';
+import { FC, ReactNode, useEffect, useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Menu } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import Sidebar from '@/components/Sidebar';
 
 interface MobileSidebarProps {
   // children: ReactNode
 }
 
-const MobileSidebar: FC<MobileSidebarProps> = props => {
-  const [isMounted, setIsMounted] = useState(false)
+const MobileSidebar: FC<MobileSidebarProps> = (props) => {
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true)
-  }, [])
+    setIsMounted(true);
+  }, []);
 
-  if (!isMounted) return null
+  if (!isMounted) return null;
 
   return (
     <Sheet>
@@ -29,7 +29,7 @@ const MobileSidebar: FC<MobileSidebarProps> = props => {
         <Sidebar></Sidebar>
       </SheetContent>
     </Sheet>
-  )
-}
+  );
+};
 
-export default MobileSidebar
+export default MobileSidebar;

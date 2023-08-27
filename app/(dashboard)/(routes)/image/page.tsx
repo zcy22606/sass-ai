@@ -1,11 +1,11 @@
-import { FC, ReactNode } from 'react'
+import { FC, ReactNode } from 'react';
 
 interface ImagePageProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const ImagePage: FC<ImagePageProps> = props => {
-  return <div>ImagePage</div>
-}
+const ImagePage: FC<ImagePageProps> = (props) => {
+  return <div>ImagePage</div>;
+};
 
-export default ImagePage
+export default ImagePage;

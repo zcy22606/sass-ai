@@ -1,11 +1,11 @@
-import { FC, ReactNode } from 'react'
+import { FC, ReactNode } from 'react';
 
 interface LandingProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const Landing: FC<LandingProps> = props => {
-  return <div>Landing</div>
-}
+const Landing: FC<LandingProps> = (props) => {
+  return <div>Landing</div>;
+};
 
-export default Landing
+export default Landing;

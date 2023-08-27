@@ -1,12 +1,12 @@
-'use client'
-import { FC, ReactNode } from 'react'
+'use client';
+import { FC, ReactNode } from 'react';
 
 interface DashboardErrorPageProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const DashboardErrorPage: FC<DashboardErrorPageProps> = props => {
-  return <div>DashboardErrorPage</div>
-}
+const DashboardErrorPage: FC<DashboardErrorPageProps> = (props) => {
+  return <div>DashboardErrorPage</div>;
+};
 
-export default DashboardErrorPage
+export default DashboardErrorPage;
